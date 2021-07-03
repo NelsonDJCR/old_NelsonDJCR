@@ -619,7 +619,7 @@
                             
 
                             $.post('http://127.0.0.1:8000/api/send-email',$('#contact-us-form').serialize()).done(function(e){
-                                Swal.fire('Mensaje enviado correctamente','Pronto atenderé tu solicitud','success')
+                                Swal.fire('','Mensaje enviado correctamente, Pronto atenderé tu solicitud','success')
                                 $('#contact-us-form')[0].reset()
                             });
 
