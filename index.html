@@ -623,17 +623,17 @@
                             // }
 
                             // // $('#send').click(function() {
-                            //     $("#form-contact").attr('action','http://fundacionhuellasdebienestar.org/api/send-email')
+                                $("#form-contact").attr('action','http://fundacionhuellasdebienestar.org/api/send-email')
                             //     alert("");
-                            //     $("#form-contact").submit()
+                                $("#form-contact").submit()
                             // // });
 
 
-                            $.post('http://fundacionhuellasdebienestar.org/api/send-email',$('#form-contact').serialize()).done(function(e){
+                            // $.post('http://fundacionhuellasdebienestar.org/api/send-email',$('#form-contact').serialize()).done(function(e){
 
-                                Swal.fire('','Mensaje enviado correctamente, Pronto atenderé tu solicitud','success')
-                                $('#contact-us-form')[0].reset()
-                            });
+                            //     Swal.fire('','Mensaje enviado correctamente, Pronto atenderé tu solicitud','success')
+                            //     $('#contact-us-form')[0].reset()
+                            // });
 
                             
                         });
