@@ -616,9 +616,13 @@
 
                     <script>
                         $('#send').click(function() {
-                            
 
-                            $.post('http://127.0.0.1:8000/api/send-email',$('#contact-us-form').serialize()).done(function(e){
+                            if ($('#contactName').val() == '' || $('#contactEmail').val() == '' || $('#subject').val() == '' || $('#contactMessage').val() == '' ) {
+                                Swal.fire('','Complete todos los campos para continuar','warning')
+                                return false;
+                            }
+                            $.post('http://fundacionhuellasdebienestar.org/api/send-email',$('#contact-us-form').serialize()).done(function(e){
+
                                 Swal.fire('','Mensaje enviado correctamente, Pronto atenderé tu solicitud','success')
                                 $('#contact-us-form')[0].reset()
                             });
