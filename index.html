@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>NelsonDJCR</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <link rel="shortcut icon" href="images/logo-white.png" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -618,7 +619,8 @@
                             
 
                             $.post('http://127.0.0.1:8000/api/send-email',$('#contact-us-form').serialize()).done(function(e){
-                                console.log(e);
+                                Swal.fire('Mensaje enviado correctamente','Pronto atenderé tu solicitud','success')
+                                $('#contact-us-form')[0].reset()
                             });
 
                             
