@@ -617,7 +617,7 @@
                     <script>
                         $('#send').click(function() {
 
-                            if ($('#contactName').val() == '' || $('#contactEmail').val() == '' || $('#subject').val() == '' || $('#contactMessage').val() == '' ) {
+                            if ($('#contactName').val() == '' && $('#contactEmail').val() == '' && $('#subject').val() == '' && $('#contactMessage').val() == '' ) {
                                 Swal.fire('','Complete todos los campos para continuar','warning')
                                 return false;
                             }
