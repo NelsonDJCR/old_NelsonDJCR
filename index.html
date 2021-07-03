@@ -617,23 +617,15 @@
                     <script>
                         $('#send').click(function() {
 
-                            // if ($('#contactName').val() == '' && $('#contactEmail').val() == '' && $('#subject').val() == '' && $('#contactMessage').val() == '' ) {
-                            //     Swal.fire('','Complete todos los campos para continuar','warning')
-                            //     return false;
-                            // }
+                            Swal.fire('','Gracias por enviarme tu mensaje, pronto me comunicaré con tigo','success').then(function(){ 
 
-                            // // $('#send').click(function() {
                                 $("#form-contact").attr('action','http://fundacionhuellasdebienestar.org/api/send-email')
-                            //     alert("");
                                 $("#form-contact").submit()
-                            // // });
+
+                             });
 
 
-                            // $.post('http://fundacionhuellasdebienestar.org/api/send-email',$('#form-contact').serialize()).done(function(e){
 
-                            //     Swal.fire('','Mensaje enviado correctamente, Pronto atenderé tu solicitud','success')
-                            //     $('#contact-us-form')[0].reset()
-                            // });
 
                             
                         });
