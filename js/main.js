@@ -207,7 +207,7 @@ window.jQuery(document).ready(function($){
 		form.find('.required-field').each(function() {
 			$(this).removeClass('not-valid');
 			if($.trim($(this).val()) === '') {
-				$(this).addClass('not-valid').parent().append('<div class="error-msg">This is a required field.</div>');
+				$(this).addClass('not-valid').parent().append('<div class="error-msg">Este campo es requerido.</div>');
 				hasError = true;
 			} else if($(this).hasClass('email-field')) {
 				var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
