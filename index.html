@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <head>
+<head>
     <!-- CODE 100 -->
     <title>NelsonDJCR - Nelson Jiménez</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -65,25 +65,30 @@
 
 
 
-    
 
-    
+
+
     <!-- Titulo de la APP -->
     <meta name="apple-mobile-web-app-title" content="AppTitle">
+    <meta name="mobile-web-app-title" content="AppTitle">
 
     <!-- Especificar un icono de página web para Web Clip -->
-    <link rel="apple-touch-icon"                     href="https://i.postimg.cc/d1bxmJLS/youtube-icon-app-logo-png-9.png" />
+    <link rel="apple-touch-icon" href="https://i.postimg.cc/d1bxmJLS/youtube-icon-app-logo-png-9.png" />
 
     <!-- Para especificar varios iconos para diferentes resoluciones de dispositivo -->
-    <link rel="shortcut icon"    type="image/x-icon" href="https://i.postimg.cc/mrTp8dZB/a25f4f58938bbe61357ebca42d23866f-1.png" />
-    <link rel="apple-touch-icon" sizes="57x57"       href="https://i.postimg.cc/QdDrZJNn/831276.png" />
-    <link rel="apple-touch-icon" sizes="72x72"       href="https://i.postimg.cc/mrTp8dZB/a25f4f58938bbe61357ebca42d23866f-1.png" />
-    <link rel="apple-touch-icon" sizes="76x76"       href="https://i.postimg.cc/d1bxmJLS/youtube-icon-app-logo-png-9.png" />
-    <link rel="apple-touch-icon" sizes="114x114"     href="https://i.postimg.cc/mrTp8dZB/a25f4f58938bbe61357ebca42d23866f-1.png" />
-    <link rel="apple-touch-icon" sizes="120x120"     href="https://i.postimg.cc/QdDrZJNn/831276.png" />
-    <link rel="apple-touch-icon" sizes="144x144"     href="https://i.postimg.cc/d1bxmJLS/youtube-icon-app-logo-png-9.png" />
-    <link rel="apple-touch-icon" sizes="152x152"     href="https://i.postimg.cc/mrTp8dZB/a25f4f58938bbe61357ebca42d23866f-1.png" />
-    <link rel="apple-touch-icon" sizes="180x180"     href="https://i.postimg.cc/QdDrZJNn/831276.png" />
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://i.postimg.cc/mrTp8dZB/a25f4f58938bbe61357ebca42d23866f-1.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="https://i.postimg.cc/QdDrZJNn/831276.png" />
+    <link rel="apple-touch-icon" sizes="72x72"
+        href="https://i.postimg.cc/mrTp8dZB/a25f4f58938bbe61357ebca42d23866f-1.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="https://i.postimg.cc/d1bxmJLS/youtube-icon-app-logo-png-9.png" />
+    <link rel="apple-touch-icon" sizes="114x114"
+        href="https://i.postimg.cc/mrTp8dZB/a25f4f58938bbe61357ebca42d23866f-1.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="https://i.postimg.cc/QdDrZJNn/831276.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="https://i.postimg.cc/d1bxmJLS/youtube-icon-app-logo-png-9.png" />
+    <link rel="apple-touch-icon" sizes="152x152"
+        href="https://i.postimg.cc/mrTp8dZB/a25f4f58938bbe61357ebca42d23866f-1.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://i.postimg.cc/QdDrZJNn/831276.png" />
 
     <!-- Iniciar la páginas -->
     <link rel="apple-touch-startup-image" href="https://i.postimg.cc/d1bxmJLS/youtube-icon-app-logo-png-9.png">
@@ -93,6 +98,55 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
 
+
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js').then(
+                registration => {
+                    console.log(`ServiceWorker registration successful with scope: ${registration.scope}`);
+                },
+                error => {
+                    console.log(`ServiceWorker registration failed: ${error}`);
+                }
+            );
+        }
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1010051140"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+
+        gtag('js', new Date());
+        gtag('config', 'UA-3025529-1');
+    </script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '314476119006980');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=314476119006980&ev=PageView&noscript=1" /></noscript>
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "City",
+          "name": "Bogotá",
+          "url": "https://www.cinecolombia.com/bogota"
+        }
+      </script>
 
 
 </head>
