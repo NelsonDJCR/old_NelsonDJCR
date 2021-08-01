@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*-----------------------------------------------------------------------------------
 
     Template Name: Drozd - CV Resume Portfolio Template
@@ -59,6 +60,7 @@
     6.8. If Height is to Small
 
 ================================================== */
+
 .img_portfolio {
     height: 270px !important;
     object-fit: cover !important;
@@ -3791,7 +3793,7 @@ margin-left:20px;
     z-index:1;
 }
 
-@charset "UTF-8";
+
 /* Slider */
 .slick-slider { position: relative; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
 
