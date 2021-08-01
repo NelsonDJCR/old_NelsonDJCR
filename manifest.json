@@ -1,8 +1,14 @@
-
 {
-    "background_color": "#FFFFFF",
-    "description": "Descriptin web",
-    "display": "fullscreen",
+    "name": "#name",
+    "short_name": "#short_name",
+    "description": "description",
+    "background_color": "#23f74a",
+    "theme_color": "#F0DB4F",
+    "orientation": "portrait",
+    "display": "standalone",
+    "start_url": "./?utm_source=web_app_manifest",
+    "scope": "./",
+    "lang": "es",
     "icons": [
         {
             "src": "https://archivos.cinecolombia.com/cineco-cms-frontend/1.0.36/dist/images/pwa-icons/favicon-16x16.png",
@@ -29,9 +35,5 @@
             "sizes": "512x512",
             "type": "image/png"
         }
-    ],
-    "name": "Cine Colombia",
-    "short_name": "Cine Colombia",
-    "start_url": ".",
-    "theme_color": "#FFFFFF"
+    ]
 }
