@@ -1,0 +1,37 @@
+
+{
+    "background_color": "#FFFFFF",
+    "description": "Descriptin web",
+    "display": "fullscreen",
+    "icons": [
+        {
+            "src": "https://archivos.cinecolombia.com/cineco-cms-frontend/1.0.36/dist/images/pwa-icons/favicon-16x16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        },
+        {
+            "src": "https://archivos.cinecolombia.com/cineco-cms-frontend/1.0.36/dist/images/pwa-icons/favicon-32x32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "https://archivos.cinecolombia.com/cineco-cms-frontend/1.0.36/dist/images/pwa-icons/mstile-144x144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "https://archivos.cinecolombia.com/cineco-cms-frontend/1.0.36/dist/images/pwa-icons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "https://archivos.cinecolombia.com/cineco-cms-frontend/1.0.36/dist/images/pwa-icons/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "name": "Cine Colombia",
+    "short_name": "Cine Colombia",
+    "start_url": ".",
+    "theme_color": "#FFFFFF"
+}
