@@ -4,29 +4,27 @@
 <head>
 
 
-<!-- 900  -->
+    <!-- 900  -->
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=yes">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>NelsonDJCR - Nelson Jiménez</title>
 
-    <meta name="description" content="Desarrollado Nelson Jiménez, enseño a pregramar, cursos deprogramación Nelson jiménez">
+    <meta name="description"
+        content="Desarrollado Nelson Jiménez, enseño a pregramar, cursos deprogramación Nelson jiménez">
     <meta name="theme-color" content="#F0DB4F">
     <meta name="MobileOptimized" content="width">
     <meta name="HandheldFriendly" content="true">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="shortcut icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/2048px-User_icon_2.svg.png">
-    <link rel="apple-touch-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/2048px-User_icon_2.svg.png">
-    <link rel="apple-touch-startup-image" href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/2048px-User_icon_2.svg.png">
+    <link rel="shortcut icon" type="image/png"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/2048px-User_icon_2.svg.png">
+    <link rel="apple-touch-icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/2048px-User_icon_2.svg.png">
+    <link rel="apple-touch-startup-image"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/2048px-User_icon_2.svg.png">
     <link rel="manifest" href="./manifest.json">
-    
-
-
-
-
-
 
 
     <!-- CODE 200 -->
@@ -36,11 +34,11 @@
 
 
 
-    
 
 
 
-    
+
+
 
 
 
@@ -366,6 +364,28 @@
                 </div>
             </div>
         </div>
+   
+        <style>
+            @keyframes aparecer {
+                0% {
+                    opacity: 0;
+                    transform: translateY(100px);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            .ocultar {
+                opacity: 0;
+            }
+
+            .animar {
+                animation: contador 1.3s;
+            }
+        </style>
 
         <div id="counter" class="wrap-bg image-overly-dark">
             <div class="container">
@@ -375,8 +395,8 @@
 
                             <div class="col-xs-6 col-sm-6 col-md-3">
                                 <div class="info">
-                                    <div class="themeioan_counter text-center">
-                                        <h4>8</h4>
+                                    <div class="themeioan_counter text-center contador ocultar">
+                                        <h4 class="contador_cantidad" data-cantidad-total="8">0</h4>
                                         <!-- 
                                         *** Customers ***
                                             1 Juan Diego Soluciones
@@ -394,24 +414,24 @@
                             </div>
                             <div class="col-xs-6 col-sm-6 col-md-3">
                                 <div class="info">
-                                    <div class="themeioan_counter text-center">
-                                        <h4>11</h4>
+                                    <div class="themeioan_counter text-center contador ocultar">
+                                        <h4 class="contador_cantidad" data-cantidad-total="11">0</h4>
                                         <p>Proyectos realizados</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xs-6 col-sm-6 col-md-3">
                                 <div class="info">
-                                    <div class="themeioan_counter text-center">
-                                        <h4>1292615</h4>
+                                    <div class="themeioan_counter text-center contador ocultar">
+                                        <h4 class="contador_cantidad" data-cantidad-total="1092615">546307</h4>
                                         <p>Líneas de Código</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xs-6 col-sm-6 col-md-3">
                                 <div class="info">
-                                    <div class="themeioan_counter text-center">
-                                        <h4>146</h4>
+                                    <div class="themeioan_counter text-center contador ocultar">
+                                        <h4 class="contador_cantidad" data-cantidad-total="146">0</h4>
                                         <p>Tasas de Café</p>
                                     </div>
                                 </div>
@@ -754,7 +774,9 @@
                 </div>
             </div>
 
-            <div class="cd-top">Top</div>
+            <div class="cd-top">
+                <p>ds</p>
+            </div>
 
         </div>
     </footer>
