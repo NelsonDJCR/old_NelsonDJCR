@@ -16,7 +16,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=yes">
     <meta name="description"
         content="Desarrollado Nelson Jiménez, enseño a pregramar, cursos deprogramación Nelson jiménez">
-
     <!-- METADATA -->
     <meta name="msapplication-TileColor" content="#30acff">
     <meta name="theme-color" content="#e95e27">
@@ -57,7 +56,7 @@
     <script src="contentscript.js"></script>
 
 
-    
+
 
 
 </head>
@@ -78,20 +77,45 @@
                 </div>
                 <div class="collapse navbar-collapse " id="navbarCollapse">
                     <ul class="nav navbar-nav ml-auto">
-                        <li><a href="#home" class="nav-link">Inicio</a></li>
-                        <li><a href="#about" class="nav-link">Acerca de</a></li>
-                        <li><a href="#services_image" class="nav-link">Servicios</a></li>
-                        <li><a href="#recentworks" class="nav-link">Portafolio</a></li>
-                        <li><a href="#clients" class="nav-link">Clientes</a></li>
-                        <li><a href="#skills" class="nav-link">Habilidades</a></li>
-                        <li><a href="#contact" class="nav-link">Contacto</a></li>
-                        <!-- <li class="subnav">
-                            <a href="index.html">Idioma</a>
+                        <li><a href="#home" class="nav-link">
+                                <p>Inicio</p>
+                            </a></li>
+                        <li><a href="#about" class="nav-link">
+                                <p>Acerca de</p>
+                            </a></li>
+                        <li><a href="#services_image" class="nav-link">
+                                <p>Servicios</p>
+                            </a></li>
+                        <li><a href="#recentworks" class="nav-link">
+                                <p>Portafolio</p>
+                            </a></li>
+                        <li><a href="#clients" class="nav-link">
+                                <p>Clientes</p>
+                            </a></li>
+                        <li><a href="#skills" class="nav-link">
+                                <p>Habilidades</p>
+                            </a></li>
+                        <li><a href="#contact" class="nav-link">
+                                <p>Contacto</p>
+                            </a></li>
+                        <li class="subnav">
+                            <a href="index.html">
+                                <p>Idioma</p>
+                            </a>
                             <ul class="sub-menu">
-                                <li><a href="#" class="nav-link ">Español</a></li>
-                                <li><a href="#" class="nav-link ">Inglés</a></li>
+                                <li>
+                                    <a href="#" class="nav-link ">Español &nbsp; <img width="20px"
+                                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/200px-Flag_of_Colombia.svg.png"
+                                            alt="Bandera de Colombia" title="Español"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link ">Inglés &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img
+                                            width="20px"
+                                            src="https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg"
+                                            alt="Bandera de Gran Bretaña" title="Inglés"></a>
+                                </li>
                             </ul>
-                        </li> -->
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -772,7 +796,7 @@
     </div>
 
     <script src='js/jquery-3.4.1.min.js'></script>
-    <script src='js/main.js'></script>
+    <!-- <script src='js/main.js'></script> -->
     <script src='js/bootstrap.min.js'></script>
     <script src='js/slick.min.js'></script>
 
@@ -786,23 +810,10 @@
     <script src='js/jquery.counterup.min.js'></script> -->
     <!-- <script src='js/owl.carousel.min.js'></script>
     <script src="js/typed.min.js"></script> -->
-    <script src="js/particles.js"></script>
-    <script src="js/particles.app.js"></script>
+    <!-- <script src="js/particles.js"></script> -->
+    <!-- <script src="js/particles.app.js"></script> -->
 
-    <script>
-        $('#send').click(function () {
 
-            if ($('#contactName').val() == '' && $('#contactEmail').val() == '' && $('#subject').val() == '' && $('#contactMessage').val() == '') {
-                Swal.fire('', 'Complete todos los campos para continuar', 'warning')
-                return false;
-            } else {
-                Swal.fire('', 'Gracias por enviarme tu mensaje, pronto me comunicaré con tigo', 'success').then(function () {
-                    $("#form-contact").attr('action', 'http://fundacionhuellasdebienestar.org/api/send-email')
-                    $("#form-contact").submit()
-                });
-            }
-        });
-    </script>
 </body>
 
 </html>
